@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+  <mat-form-field>
+    <input
+        #inputDateStart
+        matInput
+        [matDatepicker]="dpStart"
+        formControlName="dateStart"
+    />
+
+    <mat-datepicker-toggle matSuffix [for]="dpStart" awbNoTab></mat-datepicker-toggle>
+    <mat-datepicker #dpStart></mat-datepicker>
+  </mat-form-field>
+</form>
